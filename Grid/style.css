@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: #daf0ff;
+}
+
+div {
+    background: linear-gradient(191.94deg, #17181A -4.95%, #17181A 103.74%);
+    width: 375px;
+    height: 568px;
+    border-radius: 35px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+input {
+    font-size: 48px;
+    background-color: #17181A;
+    border: none;
+    outline: none;
+    text-align: right;
+    padding-top: 50px;
+    color: white;
+    grid-row: 1/3;
+    grid-column: 1/5;
+}
+
+button {
+    font-size: 24px;
+    border: none;
+    margin: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.black-button {
+    background: #303136;
+}
+
+button:nth-child(18) {
+    grid-column: 1/3;
+}
+
+.blue-button {
+    background: #005db2;
+}
+
+.equal-button {
+    background: #1991ff;
+}
+
+.equal {
+    background: #1991ff;
+    grid-row: 6/8;
+    grid-column: 4/5;
+}
+
+.gray-button {
+    background: #616161;
+}
+
+button:hover {
+    opacity: 0.7
+}
+
+@media (max-width: 480px) {
+    div {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        padding: 10px;
+    }
+
+    input {
+        font-size: 36px;
+        padding-top: 30px;
+    }
+
+    button {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+}

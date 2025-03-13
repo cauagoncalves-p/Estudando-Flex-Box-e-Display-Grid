@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        .container{
+            background-color: aliceblue;
+            border: 2px solid red;
+            padding: 15px;
+            max-width: 300px;
+            height: 300px;
+            display: flex;
+            /*Alinhamento na horizontal*/
+            justify-content: space-between;
+            /*Alinhamento na horizontal*/
+            align-items: center;
+            /*Faço os elementos desceram para linha de baixo quando não tem mais espaço na largura estabelecida*/
+         
+        }
+
+        .item{
+            background-color: aqua;
+            border: solid blue;
+            height: 50px;
+            width: 50px;
+        }
+
+        .box{
+            background-color: aqua;
+            border: solid blue;
+            height: 50px;
+            /*limite inicial de largura*/
+            /* flex-basis: 50px;
+            flex-grow: 1;
+            flex-shrink: 1; */
+           /*shothand para item*/
+           flex: 1 1 50px;
+           /*GROW, SHRINK E BASIS, */   
+            
+        }
+/* 
+        #item1{
+            flex-grow: 2;
+        }
+
+        #item2, #item3{
+            flex-grow: 1;
+        }
+
+        #item2{
+            flex-basis: 100px;
+        } */
+
+        #item3{
+            flex-shrink: 2;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+    </div>
+    <!--Itens-->
+    <div class="container">
+        <div class="box" id="item1">1</div>
+        <div class="box" id="item2">2</div>
+        <div class="box" id="item3">3</div>
+    </div>
+</body>
+</html>
