@@ -1,0 +1,35 @@
+.inline-bloco{
+    width: 400px;
+    height: 400px;
+    background-color: brown;
+    font-size: xx-large;
+    color: white;
+    margin: 15px;
+    display: inline-block;
+}
+
+.block{
+    background-color: aquamarine;
+    font-size: xx-large;
+    color: white;
+    margin: 10px;
+    display: block;
+}
+
+.static{
+    position: static;
+    background-color: blue;
+    color: white;
+    height: 100px;
+    width: 100px;
+    position: static;
+}
+
+.sticky{
+    height: 150px;
+    width: 150px;
+    background-color: blueviolet;
+    border: solid 2px black;
+    position: sticky;
+    top: 10px;
+}
